@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-01 11:02:28</sys_created_on>
+        <sys_id>5ad13ed88326261049a6caffeeaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_patient_table.u_patient_table_user</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="951fae948326261049a6caffeeaad3a6">951fae948326261049a6caffeeaad3a6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">951fae948326261049a6caffeeaad3a6</sys_scope>
+        <sys_security_acl display_value="u_patient_table">d6d13ed88326261049a6caffeeaad3aa</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5ad13ed88326261049a6caffeeaad3ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-01 11:02:28</sys_updated_on>
+        <sys_user_role display_value="u_patient_table_user" name="u_patient_table_user">8ad176d88326261049a6caffeeaad3d8</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management Application">951fae948326261049a6caffeeaad3a6</application>
+        <file_path/>
+        <instance_id>e34dcefc1bd6fd98c8432f8dee4bcb63</instance_id>
+        <instance_name>dev200492</instance_name>
+        <name>sys_security_acl_role_5ad13ed88326261049a6caffeeaad3ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-01 11:02:28</sys_created_on><sys_id>5ad13ed88326261049a6caffeeaad3ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_patient_table.u_patient_table_user</sys_name><sys_package display_value="Healthcare Management Application" source="951fae948326261049a6caffeeaad3a6">951fae948326261049a6caffeeaad3a6</sys_package><sys_policy/><sys_scope display_value="Healthcare Management Application">951fae948326261049a6caffeeaad3a6</sys_scope><sys_security_acl display_value="u_patient_table">d6d13ed88326261049a6caffeeaad3aa</sys_security_acl><sys_update_name>sys_security_acl_role_5ad13ed88326261049a6caffeeaad3ad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-01 11:02:28</sys_updated_on><sys_user_role display_value="u_patient_table_user" name="u_patient_table_user">8ad176d88326261049a6caffeeaad3d8</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-2033281201</payload_hash>
+        <record_name>u_patient_table.u_patient_table_user</record_name>
+        <reverted_from/>
+        <source>3d8fea188326261049a6caffeeaad3f3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-01 11:02:28</sys_created_on>
+        <sys_id>56d13ed88326261049a6caffeeaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197c5a70c4c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-01 11:02:28</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>5ad13ed8442626105b3fde3875706daf</update_guid>
+        <update_guid_history>5ad13ed8442626105b3fde3875706daf:-2033281201</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="u_patient_table.u_patient_table_user">8b973e908366261049a6caffeeaad32c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-01 11:27:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>a074619bff464f8883283fedd6000064</sys_id>
+        <sys_metadata>5ad13ed88326261049a6caffeeaad3ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_patient_table.u_patient_table_user</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="951fae948326261049a6caffeeaad3a6">951fae948326261049a6caffeeaad3a6</sys_package>
+        <sys_parent display_value="">d6d13ed88326261049a6caffeeaad3aa</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">951fae948326261049a6caffeeaad3a6</sys_scope>
+        <sys_scope_delete display_value="">1239e29cd8164bf8842d9a24386b58e1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_5ad13ed88326261049a6caffeeaad3ad</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_5ad13ed88326261049a6caffeeaad3ad">56d13ed88326261049a6caffeeaad3b0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-01 11:27:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0639ba148366261049a6caffeeaad3b9" label="Patient Table" max_length="40" name="u_patient_table" type="collection">
+        <element label="contact" max_length="255" name="u_contact" type="phone_number_e164"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+    </element>
+</database>
