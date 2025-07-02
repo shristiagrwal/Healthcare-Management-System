@@ -1,3 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="f72376e083e6661049a6caffeeaad3ef" extends="task" label="Medication " max_length="40" name="u_medication" type="collection"/>
+    <element audit="true" db_object_id="f72376e083e6661049a6caffeeaad3ef" extends="task" label="Medication " max_length="40" name="u_medication" type="collection">
+        <element attributes="encode_utf8=false" label="Prescribing Doctor" mandatory="true" max_length="32" name="u_prescribing_doctor" reference="cmdb_multisource_deny_class" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Medication Name" mandatory="true" max_length="40" name="u_string_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Patient Id" mandatory="true" max_length="40" name="u_patient_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Dosage" max_length="1000" name="u_dosage" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="New Journal" max_length="4000" name="u_journal_9" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="none" label="Frequency" mandatory="true" max_length="40" name="u_frequency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="None" sequence="0" value="none"/>
+                <element inactive_on_update="false" label="Once Daily" sequence="1" value="once daily"/>
+                <element inactive_on_update="false" label="Thrice Daily" sequence="3" value="thrice daily"/>
+                <element inactive_on_update="false" label="Twice Daily" sequence="2" value="twice daily"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Medication Id" max_length="40" name="u_medication_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
+    </element>
 </database>

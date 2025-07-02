@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f2eec4bc836e661049a6caffeeaad307" extends="task" label="Lab Test" max_length="40" name="u_lab_test" type="collection"/>
+</database>
