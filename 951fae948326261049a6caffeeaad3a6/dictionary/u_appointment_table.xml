@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="5fae71e483e2661049a6caffeeaad36b" label="Appointment " max_length="40" name="u_appointment_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Appointment Id" max_length="40" name="u_appointment_id" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Doctor" mandatory="true" max_length="32" name="u_doctor" reference="cmdb_multisource_deny_class" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Appointment Date" mandatory="true" max_length="40" name="u_appointment_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="none" label="Departments" max_length="40" name="u_department" type="string">
+            <choice>
+                <element inactive_on_update="false" label="General Medicine" sequence="1" value="general medicine"/>
+                <element inactive_on_update="false" label="None" sequence="0" value="none"/>
+                <element inactive_on_update="false" label="Cardiology" sequence="2" value="cardiology"/>
+                <element inactive_on_update="false" label="Pediatrics" sequence="3" value="pediatrics"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Patient Id" mandatory="true" max_length="32" name="u_patient_id" reference="cmdb_multisource_deny_class" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="none" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="None" sequence="0" value="none"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="2" value="confirmed"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <index name="index">
+            <element name="u_doctor"/>
+        </index>
+        <index name="index2">
+            <element name="u_patient_id"/>
+        </index>
+    </element>
+</database>

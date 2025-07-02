@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="0639ba148366261049a6caffeeaad3b9" label="Patient Table" max_length="40" name="u_patient_table" type="collection">
+        <element label="emergency" max_length="40" name="u_emergency" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="First Name" mandatory="true" max_length="40" name="u_first_name" type="string"/>
         <element label="contact" max_length="255" name="u_contact" type="phone_number_e164"/>
+        <element label="Emergency Contact" mandatory="true" max_length="40" name="u_emergency_contact" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Address" mandatory="true" max_length="1000" name="u_address" type="string"/>
+        <element label="Contact Number" mandatory="true" max_length="40" name="u_contact_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Patient Id" max_length="40" name="u_patient_id" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date Of Birth" mandatory="true" max_length="40" name="u_date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="none" label="Gender" mandatory="true" max_length="40" name="u_gender" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="1" value="male"/>
+                <element inactive_on_update="false" label="None" sequence="0" value="none"/>
+                <element inactive_on_update="false" label="Female" sequence="2" value="female"/>
+                <element inactive_on_update="false" label="Other" sequence="3" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="u_email" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
     </element>
 </database>
